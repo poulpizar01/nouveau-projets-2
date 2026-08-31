@@ -1,0 +1,66 @@
+/* =============================================================
+   OIL ROXWOOD — Projet 2 · « Salle de marché »
+   theme.css · tous les jetons de design.
+   Rien de codé en dur ailleurs : si une valeur manque, elle
+   s'ajoute ICI.
+   ============================================================= */
+
+:root{
+  color-scheme: dark;
+
+  /* --- Fonds et surfaces ------------------------------------ */
+  --bg:#0B0F0C;          /* fond de page */
+  --bg-2:#0E120F;        /* fond des zones */
+  --surface:#131813;     /* carte, panneau */
+  --surface-2:#182018;   /* survol, segment actif */
+  --line:#232A24;        /* filet principal */
+  --line-2:#1C221D;      /* filet de ligne de tableau */
+  --line-3:#2E372F;      /* filet marqué */
+
+  /* --- Encre ------------------------------------------------ */
+  --ink:#DBE2DB;
+  --ink-2:#9AA39A;
+  --ink-3:#5F675F;
+
+  /* --- Accent ----------------------------------------------- */
+  --accent:#3E9E72;
+  --accent-lt:#8FD79B;
+  --accent-dk:#1D3D2A;
+  --accent-line:#2E5D40;
+
+  /* --- Série de données --------------------------------------
+     Palette catégorielle validée : bande de luminosité, écart
+     daltonien et contraste vérifiés sur ce fond. Assigner dans
+     cet ordre, ne jamais boucler au-delà de 4.                  */
+  --serie-1:#3E9E72;
+  --serie-2:#B58527;
+  --serie-3:#3A8DC4;
+  --serie-4:#C25454;
+
+  /* --- États ------------------------------------------------ */
+  --up:#3E9E72;      --up-lt:#8FD79B;
+  --down:#C25454;    --down-lt:#F0968A;
+  --warn:#B58527;    --warn-lt:#F0C558;
+  --info:#3A8DC4;    --info-lt:#8FC4E8;
+
+  /* --- Typographie ------------------------------------------ */
+  --font-cond:'Barlow Semi Condensed', 'Arial Narrow', sans-serif; /* titres, en-têtes */
+  --font-text:'Barlow', system-ui, -apple-system, sans-serif;      /* texte courant */
+  --font-num:'IBM Plex Mono', ui-monospace, Menlo, monospace;      /* tous les chiffres */
+
+  --fs-xs:10.5px; --fs-sm:12px; --fs-md:13.5px; --fs-lg:21px; --fs-xl:26px;
+  --ls-label:.15em;
+
+  /* --- Géométrie -------------------------------------------- */
+  --r:5px;            /* la salle de marché n'arrondit presque rien */
+  --r-sm:4px;
+  --gap:12px;
+  --rail-w:58px;
+  --row-h:34px;
+
+  --t:.12s ease;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+}
